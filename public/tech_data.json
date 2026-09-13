@@ -1,7 +1,7 @@
 [
   {
     "name": "React",
-    "logo": "../src/assets/React.png",
+    "logo": "./assets/React.png",
     "badge": "Popular",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "category": "Frontend",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Vue.js",
-    "logo": "../src/assets/Vue.js.png",
+    "logo": "./assets/Vue.js.png",
     "badge": "Versatile",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
     "category": "Frontend",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Svelte",
-    "logo": "../src/assets/Svelte.png",
+    "logo": "./assets/Svelte.png",
     "badge": "Fast",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
     "category": "Frontend",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Next.js",
-    "logo": "../src/assets/Next.js.png",
+    "logo": "./assets/Next.js.png",
     "badge": "Full Stack",
     "description": "The React framework for full-stack web applications with hybrid static and server rendering.",
     "category": "Frontend",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Node.js",
-    "logo": "../src/assets/Node.js.png",
+    "logo": "./assets/Node.js.png",
     "badge": "Standard",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
     "category": "Backend",
@@ -46,7 +46,7 @@
   },
   {
     "name": "PostgreSQL",
-    "logo": "../src/assets/PostgresSQL.png",
+    "logo": "./assets/PostgresSQL.png",
     "badge": "Top SQL",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
     "category": "Database",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Redis",
-    "logo": "../src/assets/Redis.png",
+    "logo": "./assets/Redis.png",
     "badge": "Cache",
     "description": "An in-memory data structure store used as a high-speed database, cache, and message broker.",
     "category": "Database",
@@ -64,7 +64,7 @@
   },
   {
     "name": "JavaScript",
-    "logo": "../src/assets/JavaScript.png",
+    "logo": "./assets/JavaScript.png",
     "badge": "Ubiquitous",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
     "category": "Language",
@@ -73,7 +73,7 @@
   },
   {
     "name": "TypeScript",
-    "logo": "../src/assets/TypeScript.png",
+    "logo": "./assets/TypeScript.png",
     "badge": "Essential",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
     "category": "Language",
@@ -82,7 +82,7 @@
   },
   {
     "name": "Java",
-    "logo": "../src/assets/Java.png",
+    "logo": "./assets/Java.png",
     "badge": "Robust",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
     "category": "Language",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Tailwind CSS",
-    "logo": "../src/assets/Tailwind CSS.png",
+    "logo": "./assets/Tailwind CSS.png",
     "badge": "Modern",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
     "category": "Styling",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Docker",
-    "logo": "../src/assets/Docker.png",
+    "logo": "./assets/Docker.png",
     "badge": "Containers",
     "description": "A platform designed to build, share, and run containerized applications reliably.",
     "category": "DevOps",
