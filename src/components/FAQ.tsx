@@ -5,7 +5,7 @@ const Faq = () => {
 <section id="faq" className="max-w-6xl mx-auto px-4 py-12">
   <div className="text-center mb-8">
     <h2 className="text-2xl font-bold text-gray-900">
-      Common <span className="brand-gradient-text">FAQ</span>
+      Common <span className="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-600 bg-clip-text text-transparent">FAQ</span>
     </h2>
 
     <p className="text-sm text-gray-500 mt-2">
