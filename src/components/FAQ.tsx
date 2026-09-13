@@ -1,9 +1,7 @@
 
 
-const FAQ = () => {
+const Faq = () => {
     return (
-        <div>
-           
 <section id="faq" className="max-w-6xl mx-auto px-4 py-12">
   <div className="text-center mb-8">
     <h2 className="text-2xl font-bold text-gray-900">
@@ -27,10 +25,7 @@ const FAQ = () => {
       </p>
     </details>
 
-    <details
-      className="border border-gray-200 rounded-lg p-4"
-      open
-    >
+    <details className="border border-gray-200 rounded-lg p-4">
       <summary className="text-sm font-semibold text-gray-800 cursor-pointer">
         Do we have to use TypeScript?
       </summary>
@@ -41,10 +36,7 @@ const FAQ = () => {
       </p>
     </details>
 
-    <details
-      className="border border-gray-200 rounded-lg p-4"
-      open
-    >
+    <details className="border border-gray-200 rounded-lg p-4">
       <summary className="text-sm font-semibold text-gray-800 cursor-pointer">
         Can we change the title, logo, and colors?
       </summary>
@@ -55,10 +47,7 @@ const FAQ = () => {
       </p>
     </details>
 
-    <details
-      className="border border-gray-200 rounded-lg p-4"
-      open
-    >
+    <details className="border border-gray-200 rounded-lg p-4">
       <summary className="text-sm font-semibold text-gray-800 cursor-pointer">
         Where do we get the technology logos and icons?
       </summary>
@@ -71,9 +60,7 @@ const FAQ = () => {
   </div>
 </section>
 
-
-        </div>
     );
 };
 
-export default FAQ;
+export default Faq;
