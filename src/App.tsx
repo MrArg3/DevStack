@@ -6,6 +6,7 @@ import type { TechType } from './components/Type/TechType'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer';
+import FAQ from './components/FAQ';
 
 const techDataFetch = async (): Promise<TechType[]> => {
   const response = await fetch('/tech_data.json');
@@ -24,7 +25,7 @@ function App() {
       <Technologies techData={techData} />
       </Suspense>
 
-
+      <FAQ/>
       <Footer/>
       
       
