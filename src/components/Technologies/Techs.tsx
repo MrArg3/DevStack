@@ -1,27 +1,12 @@
 import type { TechType } from "../Type/TechType";
-import { useState } from "react";
 
 interface TechsProps {
     techData: TechType[];
+    addedTechnologies: Set<string>;
+    onAdd: (technology: TechType) => void;
 }
 
-const Techs = ({ techData }: TechsProps) => {
-    // console.log('YourStack', techData)
-    const [addedTechnologies, setAddedTechnologies] = useState<Set<string>>(new Set());
-
-    const handleAddToStack = (technologyName: string) => {
-        if (addedTechnologies.has(technologyName)) {
-            alert(`${technologyName} is already added to your stack.`);
-            return;
-        }
-
-        setAddedTechnologies((currentTechnologies) => {
-            const updatedTechnologies = new Set(currentTechnologies);
-            updatedTechnologies.add(technologyName);
-            return updatedTechnologies;
-        });
-    };
-
+const Techs = ({ techData, addedTechnologies, onAdd }: TechsProps) => {
     return (
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {techData.map((techdataList: TechType) => {
@@ -59,8 +44,9 @@ const Techs = ({ techData }: TechsProps) => {
                         </div>
 
                         <button 
-                        onClick={() => handleAddToStack(techdataList.name)}
-                        className="w-full mt-3 py-2 rounded-md text-[9px] font-medium text-white transition-all duration-200 bg-[#0A0F1D] hover:brightness-110 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0">
+                        onClick={() => onAdd(techdataList)}
+                        disabled={addedTechnologies.has(techdataList.name)}
+                        className="w-full mt-3 py-2 rounded-md text-[9px] font-medium text-white transition-all duration-200 bg-[#0A0F1D] hover:brightness-110 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:hover:transform-none disabled:hover:shadow-none">
                             {isAdded ? 'Added to Stack' : 'Add to Stack'}
                         </button>
                     </div>
